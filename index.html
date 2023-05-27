@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Using OpenLayers with Vite</title>
+    <meta charset="UTF-8">
+    <title>Geoinfo-App</title>
+    <link rel="stylesheet" href="node_modules/ol/ol.css">
+    <style>
+      html,
+      body,
+      #map-container {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-family: sans-serif;
+      }
+  
+      #tools {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+  
+      #tools a, label, select {
+        display: inline-block;
+        padding: 0.5rem;
+        background: white;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <div id="map"></div>
-    <script type="module" src="./main.js"></script>
+    <div id="map-container"></div>
+    <div id="tools">
+      <a id="clear">Clear</a>
+      <a id="download" download="features.json">Download</a>
+
+      <form>
+        <label for="type">Draw type &nbsp;</label>
+        <select id="type">
+          <option value="Point">Point</option>
+          <option value="LineString">LineString</option>
+          <option value="Polygon">Polygon</option>
+          <option value="Circle">Circle</option>
+        </select>
+      </form>
+    </div>
+
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

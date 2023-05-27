@@ -1,5 +1,10 @@
 # OpenLayers + Vite
 
+## References
+https://openlayers.org/  
+https://openlayers.org/doc/quickstart.html 
+https://openlayers.org/en/latest/examples/ 
+
 This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
 
 To get started, run the following (requires Node 14+):
