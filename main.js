@@ -3,18 +3,53 @@ import './style.css';
 import DragAndDrop from 'ol/interaction/DragAndDrop';
 import GeoJSON from 'ol/format/GeoJSON';
 import Map from 'ol/Map.js';
+import Overlay from 'ol/Overlay.js';
 import View from 'ol/View.js';
 import {Draw, Modify, Snap} from 'ol/interaction.js';
 import {OSM, Vector as VectorSource} from 'ol/source.js';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer.js';
 import {get} from 'ol/proj.js';
+import {toLonLat} from 'ol/proj.js';
+import {toStringHDMS} from 'ol/coordinate.js';
 
 import Link from 'ol/interaction/Link';
 
 
+/**
+ * Elements that make up the popup.
+ */
+const container = document.getElementById('popup');
+const content = document.getElementById('popup-content');
+const closer = document.getElementById('popup-closer');
+
+/**
+ * Create an overlay to anchor the popup to the map.
+ */
+const popupOverlay = new Overlay({
+  element: container,
+  autoPan: {
+    animation: {
+      duration: 250,
+    },
+  },
+});
+
+/**
+ * Add a click handler to hide the popup.
+ * @return {boolean} Don't follow the href.
+ */
+closer.onclick = function () {
+  popupOverlay.setPosition(undefined);
+  closer.blur();
+  return false;
+};
+
+
+// Open Street Map
 const raster = new TileLayer({
   source: new OSM(),
 });
+
 
 const source = new VectorSource();
 const vector = new VectorLayer({
@@ -35,6 +70,7 @@ extent[0] += extent[0];
 extent[2] += extent[2];
 const map = new Map({
   layers: [raster, vector],
+  overlays: [popupOverlay],
   target: 'map-container',
   view: new View({
     center: [0, 0], // [-11000000, 4600000],
@@ -96,4 +132,15 @@ source.on('change', function () {
   const json = format.writeFeatures(features);
   download.href =
     'data:application/json;charset=utf-8,' + encodeURIComponent(json);
+});
+
+
+/**
+ * Add a click handler to the map to render the popup.
+ */
+map.on('dblclick', function (evt) {
+  const coordinate = evt.coordinate;
+  const hdms = toStringHDMS(toLonLat(coordinate));
+  content.innerHTML = '<p>You clicked here:</p><code>' + hdms + '</code>';
+  popupOverlay.setPosition(coordinate);
 });
