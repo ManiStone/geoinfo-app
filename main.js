@@ -94,6 +94,8 @@ map.addInteraction(
 const modify = new Modify({source: source});
 map.addInteraction(modify);
 
+
+// Add draw interaction
 let draw, snap; // global so we can remove them later
 const typeSelect = document.getElementById('type');
 
@@ -113,10 +115,13 @@ function addInteractions() {
 typeSelect.onchange = function () {
   map.removeInteraction(draw);
   map.removeInteraction(snap);
-  addInteractions();
+  if (typeSelect.value !== 'OFF') {
+    addInteractions();
+  }
 };
 
 addInteractions();
+
 
 // Clear GeoJSON
 const clear = document.getElementById('clear');
@@ -140,7 +145,26 @@ source.on('change', function () {
  */
 map.on('dblclick', function (evt) {
   const coordinate = evt.coordinate;
-  const hdms = toStringHDMS(toLonLat(coordinate));
-  content.innerHTML = '<p>You clicked here:</p><code>' + hdms + '</code>';
+
+  const feature = source.getFeaturesAtCoordinate(coordinate)
+
+  // const feature = map.forEachFeatureAtPixel(evt.pixel, function (feature) {
+  //   return feature;
+  // });
+
+  if (map.hasFeatureAtPixel(evt.pixel) === true) {
+    // console.log(feature)
+    content.innerHTML = '<p>You clicked feature:</p><code>' + toStringHDMS(toLonLat(coordinate)) + '</code>'; 
+    // var objeto = feature.getProperties(),propiedades;
+    // for (propiedades in objeto)
+    // {
+    //   content.innerHTML += '<b>' + propiedades + '</b> : <i><b>'+ objeto[propiedades]+'</b></i><br />';
+    // }
+    // content.innerHTML += '<b>type:</b>: ' + feature[0].type + ' / ' + feature[0].getGeometry().type + '<br />';
+    // content.innerHTML = '<p>You clicked feature:</p><code>' + feature.getProperties() + '</code>'; 
+  } else {
+    const hdms = toStringHDMS(toLonLat(coordinate));
+    content.innerHTML = '<p>You clicked here:</p><code>' + hdms + '</code>';  
+  }
   popupOverlay.setPosition(coordinate);
 });

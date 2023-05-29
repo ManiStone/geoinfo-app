@@ -1,19 +1,23 @@
 # OpenLayers + Vite
 
 ## References
-https://openlayers.org/  
-https://openlayers.org/doc/quickstart.html 
-https://openlayers.org/en/latest/examples/ 
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
+- https://openlayers.org/  
+- https://openlayers.org/doc/quickstart.html 
+- https://openlayers.org/workshop/en/ 
+- https://openlayers.org/en/latest/examples/ 
+- Draw and modify points, lines, polygons and circles: 
+  https://openlayers.org/en/latest/examples/draw-and-modify-features.html 
+- Popup: https://openlayers.org/en/latest/examples/popup.html 
 
-To get started, run the following (requires Node 14+):
 
-    npx create-ol-app my-app --template vite
+## Quick start
 
-Then change into your new `my-app` directory and start a development server (available at http://localhost:5173):
+Setup a new project and start the development server:
+(available at http://localhost:5173):
 
-    cd my-app
+    npm create ol-app geoinfo-app
+    cd geoinfo-app
     npm start
 
 To generate a build ready for production:
@@ -21,3 +25,8 @@ To generate a build ready for production:
     npm run build
 
 Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+
+
+## User documentation
+
+
