@@ -10,7 +10,7 @@
                     31.121991406160845
                 ]
             },
-            "properties": null
+            "properties":{"name":"0000"}
         },
         {
             "type": "Feature",
@@ -21,7 +21,7 @@
                     31.25591868661887
                 ]
             },
-            "properties": null
+            "properties":{"name":"0001"}
         },
         {
             "type": "Feature",
@@ -32,7 +32,7 @@
                     31.757036243518584
                 ]
             },
-            "properties": null
+            "properties":{"name":"0001"}
         },
         {
             "type": "Feature",
@@ -43,7 +43,7 @@
                     32.31118368260472
                 ]
             },
-            "properties": null
+            "properties":{"name":"0002"}
         },
         {
             "type": "Feature",
@@ -54,7 +54,7 @@
                     32.77194059470297
                 ]
             },
-            "properties": null
+            "properties":{"name":"0003"}
         },
         {
             "type": "Feature",
@@ -65,7 +65,7 @@
                     32.79503173303233
                 ]
             },
-            "properties": null
+            "properties":{"name":"0004"}
         },
         {
             "type": "Feature",
@@ -76,7 +76,7 @@
                     -33.92213661390627
                 ]
             },
-            "properties": null
+            "properties":{"name":"0005"}
         },
         {
             "type": "Feature",
@@ -87,7 +87,7 @@
                     -27.364792100942076
                 ]
             },
-            "properties": null
+            "properties":{"name":"0006"}
         },
         {
             "type": "Feature",
@@ -98,7 +98,7 @@
                     29.552815239977903
                 ]
             },
-            "properties": null
+            "properties":{"name":"0007"}
         },
         {
             "type": "Feature",
@@ -109,7 +109,7 @@
                     30.012886102137543
                 ]
             },
-            "properties": null
+            "properties":{"name":"0008"}
         },
         {
             "type": "Feature",
@@ -120,7 +120,7 @@
                     -42.27463985195541
                 ]
             },
-            "properties": null
+            "properties":{"name":"0009"}
         },
         {
             "type": "Feature",
@@ -131,7 +131,7 @@
                     35.1202876477267
                 ]
             },
-            "properties": null
+            "properties":{"name":"0010"}
         },
         {
             "type": "Feature",
@@ -142,7 +142,7 @@
                     36.831854811266766
                 ]
             },
-            "properties": null
+            "properties":{"name":"0011"}
         },
         {
             "type": "Feature",
@@ -153,7 +153,7 @@
                     37.28993004136274
                 ]
             },
-            "properties": null
+            "properties":{"name":"0012"}
         },
         {
             "type": "Feature",
@@ -164,7 +164,7 @@
                     37.69526424507241
                 ]
             },
-            "properties": null
+            "properties":{"name":"0013"}
         },
         {
             "type": "Feature",
@@ -175,7 +175,7 @@
                     35.18022826334622
                 ]
             },
-            "properties": null
+            "properties":{"name":"0000"}
         },
         {
             "type": "Feature",
@@ -186,7 +186,7 @@
                     37.787967894501136
                 ]
             },
-            "properties": null
+            "properties":{"name":"0014"}
         },
         {
             "type": "Feature",
@@ -197,7 +197,7 @@
                     37.62064439941297
                 ]
             },
-            "properties": null
+            "properties":{"name":"0015"}
         },
         {
             "type": "Feature",
@@ -208,7 +208,7 @@
                     37.04190979060621
                 ]
             },
-            "properties": null
+            "properties":{"name":"0016"}
         },
         {
             "type": "Feature",
@@ -219,7 +219,7 @@
                     37.97656684883309
                 ]
             },
-            "properties": null
+            "properties":{"name":"Athen"}
         },
         {
             "type": "Feature",
@@ -230,7 +230,7 @@
                     35.270667751743915
                 ]
             },
-            "properties": null
+            "properties":{"name":"Kreta"}
         },
         {
             "type": "Feature",
@@ -241,7 +241,7 @@
                     38.02991103046659
                 ]
             },
-            "properties": null
+            "properties":{"name":"0019"}
         },
         {
             "type": "Feature",
@@ -252,7 +252,7 @@
                     39.667682558086966
                 ]
             },
-            "properties": null
+            "properties":{"name":"0020"}
         },
         {
             "type": "Feature",
@@ -263,7 +263,7 @@
                     38.186273898942574
                 ]
             },
-            "properties": null
+            "properties":{"name":"0021"}
         },
         {
             "type": "Feature",
@@ -274,7 +274,7 @@
                     38.70254723660676
                 ]
             },
-            "properties": null
+            "properties":{"name":"0022"}
         },
         {
             "type": "Feature",
@@ -285,7 +285,7 @@
                     38.41690193745279
                 ]
             },
-            "properties": null
+            "properties":{"name":"0023"}
         },
         {
             "type": "Feature",
@@ -296,7 +296,7 @@
                     52.32914515459734
                 ]
             },
-            "properties": null
+            "properties":{"name":"Hannover"}
         },
         {
             "type": "Feature",
@@ -307,7 +307,7 @@
                     52.50336527654454
                 ]
             },
-            "properties": null
+            "properties":{"name":"Berlin"}
         },
         {
             "type": "Feature",
@@ -318,7 +318,7 @@
                     53.57344325403545
                 ]
             },
-            "properties": null
+            "properties":{"name":"0026"}
         },
         {
             "type": "Feature",
@@ -329,7 +329,7 @@
                     54.0631110160339
                 ]
             },
-            "properties": null
+            "properties":{"name":"0027"}
         },
         {
             "type": "Feature",
@@ -340,7 +340,7 @@
                     54.32663061045841
                 ]
             },
-            "properties": null
+            "properties":{"name":"0028"}
         },
         {
             "type": "Feature",
@@ -351,7 +351,7 @@
                     54.371453958637915
                 ]
             },
-            "properties": null
+            "properties":{"name":"0029"}
         },
         {
             "type": "Feature",
@@ -362,7 +362,7 @@
                     54.62665056494234
                 ]
             },
-            "properties": null
+            "properties":{"name":"0030"}
         },
         {
             "type": "Feature",
@@ -373,7 +373,7 @@
                     43.72408941952864
                 ]
             },
-            "properties": null
+            "properties":{"name":"0031"}
         },
         {
             "type": "Feature",
@@ -384,7 +384,7 @@
                     48.100662578004574
                 ]
             },
-            "properties": null
+            "properties":{"name":"München"}
         },
         {
             "type": "Feature",
@@ -395,7 +395,7 @@
                     48.83997270430095
                 ]
             },
-            "properties": null
+            "properties":{"name":"Paris"}
         },
         {
             "type": "Feature",
@@ -406,7 +406,7 @@
                     51.26932118440743
                 ]
             },
-            "properties": null
+            "properties":{"name":"Leipzig"}
         },
         {
             "type": "Feature",
@@ -417,7 +417,7 @@
                     44.90901621659526
                 ]
             },
-            "properties": null
+            "properties":{"name":"0035"}
         },
         {
             "type": "Feature",
@@ -428,7 +428,7 @@
                     41.33474220172363
                 ]
             },
-            "properties": null
+            "properties":{"name":"0036"}
         },
         {
             "type": "Feature",
@@ -439,7 +439,7 @@
                     39.545555656825485
                 ]
             },
-            "properties": null
+            "properties":{"name":"Mallorca"}
         },
         {
             "type": "Feature",
@@ -450,7 +450,7 @@
                     41.737699876411114
                 ]
             },
-            "properties": null
+            "properties":{"name":"0038"}
         },
         {
             "type": "Feature",
@@ -461,7 +461,7 @@
                     40.7131141472471
                 ]
             },
-            "properties": null
+            "properties":{"name":"0038a"}
         },
         {
             "type": "Feature",
@@ -472,7 +472,7 @@
                     41.90145056411899
                 ]
             },
-            "properties": null
+            "properties":{"name":"Rom"}
         },
         {
             "type": "Feature",
@@ -483,7 +483,7 @@
                     28.095750902334174
                 ]
             },
-            "properties": null
+            "properties":{"name":"0040"}
         },
         {
             "type": "Feature",
@@ -494,7 +494,7 @@
                     28.15388545536655
                 ]
             },
-            "properties": null
+            "properties":{"name":"0041"}
         },
         {
             "type": "Feature",
@@ -505,7 +505,7 @@
                     38.69314095675003
                 ]
             },
-            "properties": null
+            "properties":{"name":"0042"}
         },
         {
             "type": "Feature",
@@ -516,7 +516,7 @@
                     39.003571513915404
                 ]
             },
-            "properties": null
+            "properties":{"name":"0043"}
         },
         {
             "type": "Feature",
@@ -527,7 +527,7 @@
                     43.5326204268101
                 ]
             },
-            "properties": null
+            "properties":{"name":"0044"}
         },
         {
             "type": "Feature",
@@ -538,7 +538,7 @@
                     40.32979574370202
                 ]
             },
-            "properties": null
+            "properties":{"name":"0045"}
         },
         {
             "type": "Feature",
@@ -549,7 +549,7 @@
                     38.787479813192505
                 ]
             },
-            "properties": null
+            "properties":{"name":"Lissabon"}
         },
         {
             "type": "Feature",
@@ -560,7 +560,7 @@
                     37.12440091961493
                 ]
             },
-            "properties": null
+            "properties":{"name":"0047"}
         },
         {
             "type": "Feature",
@@ -571,7 +571,7 @@
                     37.273169187771785
                 ]
             },
-            "properties": null
+            "properties":{"name":"Sevilla"}
         },
         {
             "type": "Feature",
@@ -582,18 +582,7 @@
                     40.34569781481662
                 ]
             },
-            "properties": null
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -3.8264698304017273,
-                    40.98261347240353
-                ]
-            },
-            "properties": null
+            "properties":{"name":"Madrid"}
         },
         {
             "type": "Feature",
@@ -604,7 +593,7 @@
                     43.49738459758407
                 ]
             },
-            "properties": null
+            "properties":{"name":"0051"}
         },
         {
             "type": "Feature",
@@ -615,7 +604,7 @@
                     37.81846319511331
                 ]
             },
-            "properties": null
+            "properties":{"name":"0052"}
         },
         {
             "type": "Feature",
@@ -626,7 +615,7 @@
                     34.17999758688083
                 ]
             },
-            "properties": null
+            "properties":{"name":"0053"}
         },
         {
             "type": "Feature",
@@ -637,7 +626,7 @@
                     32.06395559466041
                 ]
             },
-            "properties": null
+            "properties":{"name":"0054"}
         },
         {
             "type": "Feature",
@@ -648,7 +637,7 @@
                     35.58585159323235
                 ]
             },
-            "properties": null
+            "properties":{"name":"0055"}
         },
         {
             "type": "Feature",
@@ -659,7 +648,7 @@
                     32.7872745269555
                 ]
             },
-            "properties": null
+            "properties":{"name":"0056"}
         },
         {
             "type": "Feature",
@@ -670,7 +659,7 @@
                     25.7405290927732
                 ]
             },
-            "properties": null
+            "properties":{"name":"0057"}
         }
     ]
 }

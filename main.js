@@ -145,16 +145,14 @@ source.on('change', function () {
  */
 map.on('dblclick', function (evt) {
   const coordinate = evt.coordinate;
-
-  const feature = source.getFeaturesAtCoordinate(coordinate)
-
-  // const feature = map.forEachFeatureAtPixel(evt.pixel, function (feature) {
-  //   return feature;
-  // });
-
+  
   if (map.hasFeatureAtPixel(evt.pixel) === true) {
+    var info = '';
+    map.forEachFeatureAtPixel(evt.pixel, function (feature) {
+       info = feature.get('name');
+    });
     // console.log(feature)
-    content.innerHTML = '<p>You clicked feature:</p><code>' + toStringHDMS(toLonLat(coordinate)) + '</code>'; 
+    content.innerHTML = '<p>You clicked feature: ' + info + '</p><code>' + toStringHDMS(toLonLat(coordinate)) + '</code>'; 
     // var objeto = feature.getProperties(),propiedades;
     // for (propiedades in objeto)
     // {
