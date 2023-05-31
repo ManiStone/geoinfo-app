@@ -20,6 +20,8 @@ Setup a new project and start the development server:
     cd geoinfo-app
     npm start
 
+A launch.json is provided to debug the application in Visual Studio Code. 
+
 To generate a build ready for production:
 
     npm run build
@@ -29,4 +31,8 @@ Then deploy the contents of the `dist` directory to your server.  You can also r
 
 ## User documentation
 
-
+- You can draw points and other features on the map. 
+- With Button "Download" it is possible to save the features as JSON.
+- You can drag & drop a JSON file on the map to load the content (see data/holidays.json).
+- With a double click on a feature a popup is shown. If the name propertys is set in the JSON the value is shown.
+- With "Draw type" = "OFF" a double click on the map shows a popup with the coordinates. 
